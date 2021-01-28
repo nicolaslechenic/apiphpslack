@@ -15,7 +15,7 @@ if($_SERVER['HTTP_HOST'] !=  "api-slack-token-nlc.herokuapp.com") {
 
 // Sinon je ne le fais pas
 
-$ary = array("token" => $_ENV['TOKEN'], "uri" => $_SERVER['HTTP_HOST']);
+$ary = array("token" => $_ENV['TOKEN']);
 $data = json_encode($ary);
 
 echo($data);
