@@ -19,8 +19,8 @@ if($_SERVER['HTTP_REFERER'] == "https://masuperapislack.netlify.app/") {
   $ary = array("token" => $_ENV['TOKEN']);
   $data = json_encode($ary);
 } else {
-  $ary = array("token" => "Encore une victoire de canard");
-  $data = json_encode($ary); 
+  http_response_code(401);
+
 }
 
 
