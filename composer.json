@@ -1,0 +1,11 @@
+{
+    "name": "nicolaslechenic/api",
+    "description": "un super projet",
+    "authors": [
+        {
+            "name": "Nicolas LE CHENIC",
+            "email": "nicolaslechenic@gmail.com"
+        }
+    ],
+    "require": {}
+}
