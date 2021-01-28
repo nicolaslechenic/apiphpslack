@@ -15,7 +15,14 @@ if($_SERVER['HTTP_HOST'] !=  "api-slack-token-nlc.herokuapp.com") {
 
 // Sinon je ne le fais pas
 
-$ary = array("token" => $_ENV['TOKEN']);
-$data = json_encode($ary);
+if($_SERVER['HTTP_REFERER'] == "https://masuperapislack.netlify.app/") {
+  $ary = array("token" => $_ENV['TOKEN']);
+  $data = json_encode($ary);
+} else {
+  $ary = array("token" => "Encore une victoire de canard");
+  $data = json_encode($ary); 
+}
+
+
 
 echo($data);
